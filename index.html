@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<head>
+    <title>Happy Birthday</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="loading.css">
+    <style>
+        .bulb-holder .bulb {
+            display: none;
+        }
+        .celebrate-img {
+            display: none;
+            width: 35%;
+        }
+        .message {
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Signika', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .btn-primary {
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .balloons h4 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="loading"></div>
+        <audio class="song" controls loop>
+            <source src="Happy_birthday_to_you_MIDI(chosic.com).mp3">
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <div class="balloons text-center" id="b1">
+            <h4 style="color:#12ff12;">A</h4>
+        </div>
+        <div class="balloons text-center" id="b2">
+            <h4 style="color:#152ae0;">Very</h4>
+        </div>
+        <div class="balloons text-center" id="b3">
+            <h4 style="color:#f50e0e;">Happy</h4>
+        </div>
+        <div class="balloons text-center" id="b4">
+            <h4 style="color:#0083fd;">Birthday</h4>
+        </div>
+        <div class="balloons text-center" id="b5">
+            <h4 style="color:#705ef6;">My Love</h4>
+        </div>
+        <div class="balloons text-center" id="b6">
+            <h4 style="color:#6cc712;">& Sweetheart</h4>
+        </div>
+        <div class="balloons text-center" id="b7">
+            <h4 style="color:#0f962c;">PUKUT</h4>
+        </div>
+        <img src="Images/Balloon-Border.png" width="100%" class="balloon-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="Images/HBD Banner.webp" class="bannar" alt="Happy Birthday Banner">
+                    <img src="Images/HBD 2 Banner.webp" class="bannar" alt="Happy Birthday Banner 2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="Images/IMG_20250208_214310.jpg" class="celebrate-img" alt="Celebrate">
+                </div>
+            </div>
+            <div class="row cake-cover">
+                <div class="col-md-12 text-center">
+                    <div class="cake">
+                        <div class="velas">
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                            <div class="fuego"></div>
+                        </div>
+                        <div class="cobertura"></div>
+                        <div class="bizcocho"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row message">
+                <div class="col-md-12">
+                    <p>On this special day, may your heart be filled with joy and your soul be wrapped in love. You deserve all the happiness in the world, and I hope this year brings you closer to your dreams. May your days be as bright as your smile, and may each moment be as sweet as the love you share. Wishing you endless laughter, unforgettable memories, and a lifetime of happiness. Happy Birthday!</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-fixed-bottom text-center">
+            <button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+            <button class="btn btn-primary" id="play">Play Music</button>
+            <button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+            <button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
+            <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+            <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+            <button class="btn btn-primary" id="story">A message for you</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('turn_on').addEventListener('click', function() {
+            document.querySelectorAll('.bulb').forEach(bulb => bulb.style.display = 'block');
+            document.querySelector('.celebrate-img').style.display = 'block';
+        });
+    </script>
+    <script src="effect.js"></script>
+</body>
+</html>
